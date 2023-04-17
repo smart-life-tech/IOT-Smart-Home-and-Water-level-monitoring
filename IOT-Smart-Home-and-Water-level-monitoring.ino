@@ -57,7 +57,7 @@ char auth[] = "7oNsYxbLR4H2Sao0_xuFqwllutqz0RyB";
 //char ssid[] = "Service Provider";
 //char pass[] = "@Matinik298-2021";
 char ssid[] = "4G MIFI-DB14";
-char pass[] = "1234567890";
+char pass[] = "1234567890q";
 BlynkTimer timer;
 
 void relayOnOff(int relay)
