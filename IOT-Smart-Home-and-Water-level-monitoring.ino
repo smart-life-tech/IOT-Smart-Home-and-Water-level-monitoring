@@ -1,8 +1,8 @@
 #define BLYNK_TEMPLATE_ID "TMPLPH9rUlUC"
 #define BLYNK_DEVICE_NAME "Water level Monitoring System"
 #define BLYNK_AUTH_TOKEN "7oNsYxbLR4H2Sao0_xuFqwllutqz0RyB"
-//
-
+#define APP_DEBUG
+#define BLYNK_PRINT Serial
 #include <WiFi.h>
 #include <WiFiClient.h>
 #include <BlynkSimpleEsp32.h>
@@ -54,9 +54,10 @@ int wifiFlag = 0;
 bool notifyOn, notifyOff = true;
 // char auth[] = "RUuCNjzMmcq28JDjuixBqqmZdSW4UNXu";
 char auth[] = "7oNsYxbLR4H2Sao0_xuFqwllutqz0RyB";
-char ssid[] = "Service Provider";
-char pass[] = "@Matinik298-2021";
-
+//char ssid[] = "Service Provider";
+//char pass[] = "@Matinik298-2021";
+char ssid[] = "4G MIFI-DB14";
+char pass[] = "1234567890";
 BlynkTimer timer;
 
 void relayOnOff(int relay)
